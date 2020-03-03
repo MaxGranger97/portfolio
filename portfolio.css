@@ -16,11 +16,18 @@ body {
 a {
 	text-decoration: none;
 	padding: 20px;
+	color: white;
+	font-size: 1.4rem;
+	font-family: "Courier New";
 }
 
 .anchors {
 	margin-top: auto;
 	margin-bottom: auto;
+}
+
+.nav-anchor {
+	margin-right: 20px;
 }
 
 .container {
@@ -45,8 +52,13 @@ a {
 	margin-bottom: 100px;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	color: white;
+	font-family: "Courier New";
+}
+
+.abtme-anchor {
+	font-size: 2.5rem;
 }
 
 .about-me-para {
@@ -76,6 +88,12 @@ h2 {
 	margin: 20px;
 	text-align: center;
 	font-size: 2rem;
+	font-family: "Courier New";
+}
+
+.projects-anchor {
+	font-size: 2rem;
+	color: black;
 }
 
 .my-projects {
@@ -87,12 +105,26 @@ h2 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	font-family: "Courier New";
 }
 
 .project-div {
 	margin: 20px;
 	width: 35%;
 	font-size: 1rem;
+}
+
+button {
+	font-family: "Courier New";
+	border: 2px solid black;
+	padding: 5px 12px;
+	border-radius: 50%;
+	font-size: 0.8rem;
+	box-shadow: 6px 6px 5px;
+}
+
+.project-para {
+	margin-bottom: 15px;
 }
 
 h3 {
@@ -106,34 +138,49 @@ h3 {
 }
 
 .sm-section {
+	display: flex;
+	justify-content: center;
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
+	font-family: "Courier New";
 }
 
 .contact-image {
+	display: block;
 	height: 300px;
-	width: auto;
+	border-radius: 55%;
+	margin-right: 30px;
 }
 
 .contact-div {
-	margin-top: auto;
-	margin-bottom: auto;
-}
-
-.sm-image {
-	height: 100px;
-	width: auto;
-}
-
-.sm-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	margin-top: auto;
 	margin-bottom: auto;
 	font-size: 1rem;
 }
 
-.sm-div {
+.sm-image {
+	display: block;
 	height: 100px;
+}
+
+.sm-text {
+	font-size: 1rem;
+	padding-top: 42px;
+}
+
+.sm-div {
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+}
+
+.email {
+	margin-top: 10px;
+	margin-left: 30px;
 }
 
 
