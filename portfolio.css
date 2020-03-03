@@ -1,0 +1,147 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	font-size: 62.5%;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+}
+
+a {
+	text-decoration: none;
+	padding: 20px;
+}
+
+.anchors {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.container {
+	display: inline-block;	
+}
+
+.logo {
+	height: 60px;
+	width: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.bg-image {
+	background-image: url(https://cdn.hipwallpaper.com/i/50/72/SsRWfy.jpg);
+	background-repeat: no-repeat;
+}
+
+.info-about-me {
+	width: 70%;
+	margin-top: 140px;
+	margin-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1rem;
+	color: white;
+}
+
+.about-me-para {
+	margin-bottom: 20px;
+}
+
+h1 {
+	margin-bottom: 20px;
+}
+
+.img-container {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	top: 100px;
+}
+
+.about-me-img {
+	height: 200px;
+	width: auto;
+}
+
+h2 {
+	margin: 20px;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.my-projects {
+	margin-top: 120px;
+	margin-bottom: 50px;
+}
+
+.project-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.project-div {
+	margin: 20px;
+	width: 35%;
+	font-size: 1rem;
+}
+
+h3 {
+	margin-bottom: 10px;
+}
+
+.sm-footer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #ceced6;
+}
+
+.sm-section {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contact-image {
+	height: 300px;
+	width: auto;
+}
+
+.contact-div {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.sm-image {
+	height: 100px;
+	width: auto;
+}
+
+.sm-text {
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 1rem;
+}
+
+.sm-div {
+	height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
