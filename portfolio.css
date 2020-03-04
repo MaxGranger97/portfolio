@@ -26,8 +26,16 @@ a {
 	margin-bottom: auto;
 }
 
+.nav-anchor2:hover {
+	border: 2px solid white;
+}
+
 .nav-anchor {
 	margin-right: 20px;
+}
+
+.nav-anchor:hover {
+	border: 2px solid white;
 }
 
 .container {
@@ -44,6 +52,8 @@ a {
 .bg-image {
 	background-image: url(https://cdn.hipwallpaper.com/i/50/72/SsRWfy.jpg);
 	background-repeat: no-repeat;
+	background-size: cover; 
+	width: 100%;
 }
 
 .info-about-me {
@@ -81,7 +91,6 @@ h1 {
 
 .about-me-img {
 	height: 200px;
-	width: auto;
 }
 
 h2 {
@@ -123,6 +132,10 @@ button {
 	border-radius: 50%;
 	font-size: 0.8rem;
 	box-shadow: 6px 6px 5px;
+}
+
+button:hover {
+	background-color: yellow;
 }
 
 .project-para {
@@ -167,6 +180,11 @@ h3 {
 .sm-image {
 	display: block;
 	height: 100px;
+	transition: transform .2s;
+}
+
+.sm-image:hover {
+	transform: scale(0.7);
 }
 
 .sm-text {
@@ -185,9 +203,94 @@ h3 {
 	margin-left: 30px;
 }
 
+@media only screen and (max-width: 1000px) {
+	.info-about-me {
+		width: 80%;
+	}
+	
+	.project-div {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 710px) {
+	.about-me-img {
+		height: 100px;
+		position: relative;
+		bottom: 50px;
+	}
+	
+	.navbar {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.nav-anchor {
+		margin-right: 0;
+	}
+	
+	.project-section {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.sm-section {
+		display: flex;
+		flex-direction: column;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.nav-anchor {
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.nav-anchor2 {
+		font-size: 1rem;
+		padding: 10px;
+	}
+	
+	.nav-anchor {
+		font-size: 1rem;
+		padding: 10px;
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.project-div {
+		width: 90%;
+	}
+}
 
 
+@media only screen and (max-width: 450px) {
+	.sm-section {
+		margin-left: 85px;
+	}
+	
+	.project-section {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
 
+@media only screen and (max-width: 410px) {
+	.img-container {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 390px) {
+	.sm-section {
+		margin-left: 70px;
+	}
+}
 
 
 
