@@ -108,6 +108,7 @@ h2 {
 .my-projects {
 	margin-top: 120px;
 	margin-bottom: 50px;
+	display: block;
 }
 
 .project-section {
