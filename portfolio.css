@@ -1,0 +1,303 @@
+/***** normalizer section *****/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	margin: 0;
+}
+
+/***** end normalizer section *****/
+
+/***** navbar section *****/
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+}
+
+a {
+	text-decoration: none;
+	padding: 20px;
+	color: white;
+	font-size: 2rem;
+	font-family: "Courier New";
+}
+
+.anchors {
+	margin: auto 0;
+	margin-right: 20px;
+}
+
+.nav-anchor:hover {
+	border: 2px solid white;
+}
+
+.logo {
+	height: 60px;
+}
+
+@media only screen and (max-width: 710px) {
+	.navbar {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.anchors {
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.nav-anchor {
+		font-size: 1.6rem;
+		padding: 10px;
+		margin-right: 0;
+	}
+}
+
+/***** end navbar section *****/
+
+/***** about me section *****/
+
+.bg-image {
+	background-image: url(https://cdn.hipwallpaper.com/i/50/72/SsRWfy.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; 
+}
+
+.info-about-me {
+	width: 70%;
+	margin-top: 140px;
+	margin-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 2.5rem;
+	color: white;
+	font-family: "Courier New";
+}
+
+.abtme-anchor {
+	font-size: 4.5rem;
+}
+
+.about-me-para {
+	margin-bottom: 20px;
+}
+
+h1 {
+	margin-bottom: 20px;
+}
+
+.img-container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	top: 100px;
+}
+
+.about-me-img {
+	height: 200px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.info-about-me {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 710px) {
+	.about-me-img {
+		height: 100px;
+		position: relative;
+		bottom: 50px;
+	}
+}
+
+/***** end about me section *****/
+
+/***** projects section *****/
+
+h2 {
+	margin: 20px;
+	text-align: center;
+	font-size: 2rem;
+	font-family: "Courier New";
+}
+
+.projects-anchor {
+	font-size: 3.5rem;
+	color: black;
+}
+
+.my-projects {
+	margin-top: 120px;
+	margin-bottom: 50px;
+}
+
+.project-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	font-family: "Courier New";
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.project-div {
+	margin: 20px;
+	width: 35%;
+	font-size: 1.8rem;
+}
+
+button {
+	font-family: "Courier New";
+	border: 2px solid black;
+	padding: 5px 12px;
+	border-radius: 50%;
+	font-size: 1.2rem;
+	box-shadow: 6px 6px 5px;
+}
+
+button:hover {
+	background-color: yellow;
+}
+
+.project-para {
+	margin-bottom: 15px;
+}
+
+h3 {
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.project-div {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 710px) {
+	.project-section {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.project-div {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.project-section {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+/***** end projects section *****/
+
+/***** contact me section *****/
+
+.sm-footer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #ceced6;
+}
+
+.sm-section {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Courier New";
+}
+
+.contact-image {
+	display: block;
+	height: 300px;
+	border-radius: 55%;
+	margin-right: 30px;
+}
+
+.contact-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 1.5rem;
+}
+
+.sm-image {
+	display: block;
+	height: 100px;
+	transition: transform .2s;
+}
+
+.sm-image:hover {
+	transform: scale(0.7);
+}
+
+.sm-text {
+	font-size: 1.5rem;
+	padding-top: 42px;
+}
+
+.sm-div {
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+}
+
+.email {
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+@media only screen and (max-width: 710px) {
+	.sm-section {
+		display: flex;
+		flex-direction: column;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.sm-div {
+		display: flex;
+		justify-content: center;
+	}
+	
+	.headshot-container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.sm-section {
+		margin-left: 85px;
+	}
+}
+
+@media only screen and (max-width: 390px) {
+	.sm-section {
+		margin-left: 70px;
+	}
+}
+
+/***** end contact me section *****/
