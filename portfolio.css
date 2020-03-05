@@ -1,11 +1,20 @@
+/***** normalizer section *****/
+
 * {
 	box-sizing: border-box;
-	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
 }
 
 body {
-	font-size: 62.5%;
+	margin: 0;
 }
+
+/***** end normalizer section *****/
+
+/***** navbar section *****/
 
 .navbar {
 	display: flex;
@@ -17,20 +26,12 @@ a {
 	text-decoration: none;
 	padding: 20px;
 	color: white;
-	font-size: 1.4rem;
+	font-size: 2rem;
 	font-family: "Courier New";
 }
 
 .anchors {
-	margin-top: auto;
-	margin-bottom: auto;
-}
-
-.nav-anchor2:hover {
-	border: 2px solid white;
-}
-
-.nav-anchor {
+	margin: auto 0;
 	margin-right: 20px;
 }
 
@@ -38,22 +39,38 @@ a {
 	border: 2px solid white;
 }
 
-.container {
-	display: inline-block;	
-}
-
 .logo {
 	height: 60px;
-	width: auto;
-	margin-top: auto;
-	margin-bottom: auto;
 }
+
+@media only screen and (max-width: 710px) {
+	.navbar {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.anchors {
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.nav-anchor {
+		font-size: 1.6rem;
+		padding: 10px;
+		margin-right: 0;
+	}
+}
+
+/***** end navbar section *****/
+
+/***** about me section *****/
 
 .bg-image {
 	background-image: url(https://cdn.hipwallpaper.com/i/50/72/SsRWfy.jpg);
 	background-repeat: no-repeat;
 	background-size: cover; 
-	width: 100%;
 }
 
 .info-about-me {
@@ -62,13 +79,13 @@ a {
 	margin-bottom: 100px;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	color: white;
 	font-family: "Courier New";
 }
 
 .abtme-anchor {
-	font-size: 2.5rem;
+	font-size: 4.5rem;
 }
 
 .about-me-para {
@@ -80,7 +97,7 @@ h1 {
 }
 
 .img-container {
-	width: 70%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
@@ -93,6 +110,24 @@ h1 {
 	height: 200px;
 }
 
+@media only screen and (max-width: 1000px) {
+	.info-about-me {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 710px) {
+	.about-me-img {
+		height: 100px;
+		position: relative;
+		bottom: 50px;
+	}
+}
+
+/***** end about me section *****/
+
+/***** projects section *****/
+
 h2 {
 	margin: 20px;
 	text-align: center;
@@ -101,14 +136,13 @@ h2 {
 }
 
 .projects-anchor {
-	font-size: 2rem;
+	font-size: 3.5rem;
 	color: black;
 }
 
 .my-projects {
 	margin-top: 120px;
 	margin-bottom: 50px;
-	display: block;
 }
 
 .project-section {
@@ -123,7 +157,7 @@ h2 {
 .project-div {
 	margin: 20px;
 	width: 35%;
-	font-size: 1rem;
+	font-size: 1.8rem;
 }
 
 button {
@@ -131,7 +165,7 @@ button {
 	border: 2px solid black;
 	padding: 5px 12px;
 	border-radius: 50%;
-	font-size: 0.8rem;
+	font-size: 1.2rem;
 	box-shadow: 6px 6px 5px;
 }
 
@@ -146,6 +180,36 @@ button:hover {
 h3 {
 	margin-bottom: 10px;
 }
+
+@media only screen and (max-width: 1000px) {
+	.project-div {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 710px) {
+	.project-section {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.project-div {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.project-section {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+/***** end projects section *****/
+
+/***** contact me section *****/
 
 .sm-footer {
 	padding-top: 50px;
@@ -175,7 +239,7 @@ h3 {
 	justify-content: space-between;
 	margin-top: auto;
 	margin-bottom: auto;
-	font-size: 1rem;
+	font-size: 1.5rem;
 }
 
 .sm-image {
@@ -189,7 +253,7 @@ h3 {
 }
 
 .sm-text {
-	font-size: 1rem;
+	font-size: 1.5rem;
 	padding-top: 42px;
 }
 
@@ -204,40 +268,7 @@ h3 {
 	margin-left: 30px;
 }
 
-@media only screen and (max-width: 1000px) {
-	.info-about-me {
-		width: 80%;
-	}
-	
-	.project-div {
-		width: 80%;
-	}
-}
-
 @media only screen and (max-width: 710px) {
-	.about-me-img {
-		height: 100px;
-		position: relative;
-		bottom: 50px;
-	}
-	
-	.navbar {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	
-	.nav-anchor {
-		margin-right: 0;
-	}
-	
-	.project-section {
-		padding-left: 50px;
-		padding-right: 50px;
-	}
-}
-
-@media only screen and (max-width: 650px) {
 	.sm-section {
 		display: flex;
 		flex-direction: column;
@@ -245,45 +276,21 @@ h3 {
 		margin-right: auto;
 	}
 	
-	.nav-anchor {
-		margin-right: 0;
-	}
-}
-
-@media only screen and (max-width: 550px) {
-	.nav-anchor2 {
-		font-size: 1rem;
-		padding: 10px;
+	.sm-div {
+		display: flex;
+		justify-content: center;
 	}
 	
-	.nav-anchor {
-		font-size: 1rem;
-		padding: 10px;
-		margin-right: 0;
+	.headshot-container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
 	}
 }
-
-@media only screen and (max-width: 500px) {
-	.project-div {
-		width: 90%;
-	}
-}
-
 
 @media only screen and (max-width: 450px) {
 	.sm-section {
 		margin-left: 85px;
-	}
-	
-	.project-section {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-}
-
-@media only screen and (max-width: 410px) {
-	.img-container {
-		width: 90%;
 	}
 }
 
@@ -292,6 +299,10 @@ h3 {
 		margin-left: 70px;
 	}
 }
+
+/***** end contact me section *****/
+
+
 
 
 
